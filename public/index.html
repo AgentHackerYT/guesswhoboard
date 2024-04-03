@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Who 😏</title>
+    <style>
+        body{
+            background:bisque;
+        }
+        img{
+            width: 190px;
+            height: 300px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+    <script>
+        function change(e){
+            const check = Boolean(e.getAttribute("checked"))
+            if(check){
+                e.src = "/img/"+e.id+".jpg"
+                e.setAttribute("checked", "false")
+            }else{
+                e.src = "/img/cross.png"
+                e.setAttribute("checked", "true")
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+<img src="/img/alex.jpg" onclick="change(this)" alt="img" clicked="false" id="alex">
+<img src="/img/alfred.jpg" onclick="change(this)" alt="img" clicked="false" id="alfred">
+<img src="/img/anita.jpg" onclick="change(this)" alt="img" clicked="false" id="anita">
+<img src="/img/anne.jpg" onclick="change(this)" alt="img" clicked="false" id="anne">
+<img src="/img/bernard.jpg" onclick="change(this)" alt="img" clicked="false" id="bernard">
+<img src="/img/bill.jpg" onclick="change(this)" alt="img" clicked="false" id="bill">
+<img src="/img/charles.jpg" onclick="change(this)" alt="img" clicked="false" id="charles">
+<img src="/img/claire.jpg" onclick="change(this)" alt="img" clicked="false" id="claire">
+<img src="/img/david.jpg" onclick="change(this)" alt="img" clicked="false" id="david">
+<img src="/img/eric.jpg" onclick="change(this)" alt="img" clicked="false" id="eric">
+<img src="/img/frans.jpg" onclick="change(this)" alt="img" clicked="false" id="frans">
+<img src="/img/george.jpg" onclick="change(this)" alt="img" clicked="false" id="george">
+<img src="/img/hermen.jpg" onclick="change(this)" alt="img" clicked="false" id="hermen">
+<img src="/img/joe.jpg" onclick="change(this)" alt="img" clicked="false" id="joe">
+<img src="/img/maria.jpg" onclick="change(this)" alt="img" clicked="false" id="maria">
+<img src="/img/max.jpg" onclick="change(this)" alt="img" clicked="false" id="max">
+<img src="/img/paul.jpg" onclick="change(this)" alt="img" clicked="false" id="paul">
+<img src="/img/peter.jpg" onclick="change(this)" alt="img" clicked="false" id="peter">
+<img src="/img/philip.jpg" onclick="change(this)" alt="img" clicked="false" id="philip">
+<img src="/img/richard.jpg" onclick="change(this)" alt="img" clicked="false" id="richard">
+<img src="/img/robert.jpg" onclick="change(this)" alt="img" clicked="false" id="robert">
+<img src="/img/sam.jpg" onclick="change(this)" alt="img" clicked="false" id="sam">
+<img src="/img/susan.jpg" onclick="change(this)" alt="img" clicked="false" id="susan">
+<img src="/img/tom.jpg" onclick="change(this)" alt="img" clicked="false" id="tom">
+</center>
+</body>
+</html>
